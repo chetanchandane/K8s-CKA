@@ -84,6 +84,11 @@ The **Kubernetes API Server** (`kube-apiserver`) is a critical component of the 
   kubectl explain pods
   ```
 
+### Resources
+K8s basic Architecture - https://www.youtube.com/watch?v=umXEmn3cMWY
+Documentation - https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/
+K8s Api Server - https://www.youtube.com/watch?v=6GOnHdM90Zg
+
 
 
 
