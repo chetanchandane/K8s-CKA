@@ -10,3 +10,10 @@ spec:
   containers:
   - name: nginx-container
     image: nginx
+
+
+# Create a pod using the pod.yaml file
+# kubectl create -f pod.yaml
+# kubectl get pods
+# kubectl describe pod mypod
+# kubectl delete pod mypod
