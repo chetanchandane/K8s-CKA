@@ -5,7 +5,10 @@
 Namespaces in Kubernetes are a way to divide cluster resources between multiple users. They provide a mechanism for isolating groups of resources within a single cluster. Namespaces are intended for use in environments with many users spread across multiple teams, or projects.
 
 ## General Commands for Namespaces
-
+- **Get all pods in all namespaces:**
+    ```sh
+    kubectl get pods --all-namespaces
+    ```
 - **List all namespaces:**
     ```sh
     kubectl get namespaces
