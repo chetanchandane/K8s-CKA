@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  ports:
+    - nodePort: 30008
+      port: 80
+      targetPort: 80
+  selector:
+    app: MyApp
+    type: Frontend
+  
+
+# commands to create the service
+# kubectl create -f service-definition.yaml
+# kubectl get services
+# kubectl describe service my-service
+# kubectl delete service my-service
