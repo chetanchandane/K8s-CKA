@@ -19,4 +19,4 @@
 
 **Kube Scheduling**
 - [Kube Manual Scheduling](./Day4/manual-scheduling.md)
-- []
+- [Taints and Tolerations](./Day4/taints-tolerations.md)
