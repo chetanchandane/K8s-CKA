@@ -9,7 +9,15 @@ Taints are applied to nodes and allow a node to repel a set of pods. This ensure
 ```sh
 kubectl taint nodes <node-name> key=value:taint-effect
 ```
+## Removing Taints
 
+To remove a taint from a node, you can use the `kubectl taint` command with a minus sign (`-`) at the end of the taint.
+
+### Example
+
+```sh
+kubectl taint nodes <node-name> key:taint-effect-
+```
 ## Tolerations
 
 Tolerations are applied to pods and allow them to be scheduled onto nodes with matching taints. Tolerations are specified in the pod specification.
@@ -52,3 +60,8 @@ kubectl describe node <node-name> | grep -i taints
 ```
 
 This command describes the specified node and filters the output to display the taints applied to that node.
+
+## Resource
+ 
+- [What are Taint and Toleration](https://www.youtube.com/watch?v=-L1Mewq0nfA) 
+- [TroubleShooting walkthrough - (Time Stamp-31:10)](https://www.youtube.com/watch?v=O61HDmGUBJM)

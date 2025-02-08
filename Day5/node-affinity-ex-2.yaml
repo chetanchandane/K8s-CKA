@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-affinity-pod
+spec:
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 1
+          preference:
+            matchExpressions:
+              - key: disktype
+                operator: In
+                values:
+                  - ssd
+        - weight: 2
+          preference:
+            matchExpressions:
+              - key: region
+                operator: In
+                values:
+                  - us-west-1
+  containers:
+    - name: nginx
+      image: nginx
+
+# The node affinity in this snippet is preferredDuringSchedulingIgnoredDuringExecution.
+# This means that the scheduler will try to place the pod on a node that matches the node affinity rules.
+# If no node matches the rules, the scheduler will place the pod on any node.
+
+# The node affinity rules in this snippet are:
+# - The pod prefers to be placed on a node with the label disktype=ssd.
+# - The pod prefers to be placed on a node with the label region=us-west-1.
+# The scheduler will try to place the pod on a node that matches the first rule.
+# If no node matches the first rule, the scheduler will try to place the pod on a node that matches the second rule.

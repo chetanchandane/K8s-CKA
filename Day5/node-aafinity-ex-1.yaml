@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-affinity-pod
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/e2e-az-name
+            operator: In
+            values:
+            - e2e-az1
+            - e2e-az2
+  containers:
+  - name: nginx
+    image: nginx
+
+# The node affinity in this snippet is requiredDuringSchedulingIgnoredDuringExecution.
+# This means that the scheduler will only place the pod on a node that matches the node affinity rules.
+# If no node matches the rules, the scheduler will not place the pod on any node.
+
+# The node affinity rule in this snippet is:
+# - The pod must be placed on a node with the label kubernetes.io/e2e-az-name=e2e-az1 or kubernetes.io/e2e-az-name=e2e-az2.
+# The scheduler will only place the pod on a node that matches this rule.
+

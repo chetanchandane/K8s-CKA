@@ -50,6 +50,7 @@ The scheduling process follows these key steps:
 
 ---
 
+## Resources
 
-hard and soft constraints - https://www.youtube.com/watch?v=rDCWxkvPlAw
-working of scheduler - https://www.youtube.com/watch?v=E3ExWruji7g
+- [Hard and soft constraints](https://www.youtube.com/watch?v=rDCWxkvPlAw)
+- [Working of scheduler](https://www.youtube.com/watch?v=E3ExWruji7g)
