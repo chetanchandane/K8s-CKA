@@ -76,3 +76,8 @@ While node selectors are useful, they have some limitations:
 Node selectors are a straightforward way to control which nodes your pods are scheduled on. By using labels and node selectors, you can ensure that your workloads run on the appropriate nodes in your Kubernetes cluster.
 
 For more advanced scheduling requirements, consider using node affinity or taints and tolerations.
+
+
+## Resources
+
+- [TroubleShooting walkthrough](https://www.youtube.com/watch?v=O61HDmGUBJM)

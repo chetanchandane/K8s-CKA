@@ -28,3 +28,4 @@
 - [Node Affinity - required](./Day5/node-aafinity-ex-1.yaml)
 - [Node Affinity - preffered](./Day5/node-aafinity-ex-2.yaml)
 - [Pod Affinity](./Day5/pod-affinity.md)
+- [Pod Anti-Affinity](./Day5/pod-anti-affinity.md)
