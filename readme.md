@@ -29,3 +29,7 @@
 - [Node Affinity - preffered](./Day5/node-aafinity-ex-2.yaml)
 - [Pod Affinity](./Day5/pod-affinity.md)
 - [Pod Anti-Affinity](./Day5/pod-anti-affinity.md)
+- [Resource requirement and Limits](./Day6/resource-req.md)
+- [Daemon Sets](./Day6/daemon-sets.md)
+- [Daemon Set definition yaml example](./Day6/daemon-set-definition.yaml)
+

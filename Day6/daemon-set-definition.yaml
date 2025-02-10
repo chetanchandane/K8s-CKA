@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+# here the kind is DaemonSet, only thing different than a replica set definition.
+kind: DaemonSet
+metadata:
+  name: example-daemonset
+  labels:
+    app: example
+spec:
+  selector:
+    matchLabels:
+      app: example
+  template:
+    metadata:
+      labels:
+        app: example
+    spec:
+      containers:
+      - name: example-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80
