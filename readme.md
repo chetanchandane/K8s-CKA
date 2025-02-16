@@ -32,4 +32,5 @@
 - [Resource requirement and Limits](./Day6/resource-req.md)
 - [Daemon Sets](./Day6/daemon-sets.md)
 - [Daemon Set definition yaml example](./Day6/daemon-set-definition.yaml)
+- [Multiple Schedulers](./Day7/multiple-schedulers.md)
 
